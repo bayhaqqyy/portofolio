@@ -1,0 +1,36 @@
+:root {
+  --bg: #080c1a;
+  --card: #0f172a;
+  --text: #e6f0ff;
+  --muted: #94a3b8;
+  --accent1: #4dd0e1;
+  --accent2: #5b86e5;
+  --glass: rgba(255, 255, 255, 0.04);
+}
+
+.light {
+  --bg: #f8fafc;
+  --card: #ffffff;
+  --text: #0f172a;
+  --muted: #475569;
+  --glass: rgba(0, 0, 0, 0.04);
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: "Inter", system-ui;
+}
+
+.gradient-ring {
+  background:
+    radial-gradient(circle at 18% 18%, rgba(77, 208, 225, 0.25), transparent 35%),
+    radial-gradient(circle at 82% 25%, rgba(91, 134, 229, 0.22), transparent 40%),
+    linear-gradient(160deg, rgba(77, 208, 225, 0.08), rgba(91, 134, 229, 0.08));
+}
+
+.card {
+  background: var(--card);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
+}
